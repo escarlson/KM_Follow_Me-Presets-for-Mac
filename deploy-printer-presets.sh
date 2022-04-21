@@ -4,7 +4,7 @@
 install_plist () {
     echo "⏳ Fetching and installing presets file..."
     #Download and install plist
-    curl https://nc.stevencarlson.me/index.php/s/8Xk3FmtNwLX95yg/download/com.apple.print.custompresets.forprinter.KM_Follow_Me.plist -o ~/Library/Preferences/com.apple.print.custompresets.forprinter.KM_Follow_Me.plist
+    curl https://github.com/escarlson/KM_Follow_Me-Presets-for-Mac/raw/main/com.apple.print.custompresets.forprinter.KM_Follow_Me.plist -o ~/Library/Preferences/com.apple.print.custompresets.forprinter.KM_Follow_Me.plist
     #Check that the file was placed successfully, lest we needlessly reboot
     if [ -e ~/Library/Preferences/com.apple.print.custompresets.forprinter.KM_Follow_Me.plist ]
     then
